@@ -34,3 +34,10 @@ elseif v(1) == 2,
 else
   disp('The value is not one or two.');
 end;
+
+squareThisNumber(5)
+[a, b] = squareAndCubeThisNumber(5)
+
+X = [ 1 1; 1 2; 1 3]
+Y = [1; 2; 3]
+theta = [0:1]
