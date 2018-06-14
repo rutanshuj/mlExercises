@@ -25,7 +25,15 @@ plot(t,y1);
 subplot(1,2,2);
 plot(t,y2);
 axis([0.5 1 -1 1])
-
+close;
 clf;
+
+A = magic(5)
+imagesc(A)
+imagesc(A), colorbar, colormap gray;
+A = magic(15)
+imagesc(A), colorbar, colormap gray;
+
+a=1, b=2, c=3 %comma chaining function calls
 
 
