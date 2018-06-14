@@ -53,3 +53,4 @@ pinv(A) % inverse of A
 temp = pinv(A)
 temp*A % gives identity matrix
 
+
