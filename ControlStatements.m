@@ -39,7 +39,16 @@ squareThisNumber(5)
 [a, b] = squareAndCubeThisNumber(5)
 
 X = [ 1 1; 1 2; 1 3]
-Y = [1; 2; 3]
-theta = [0:1]
+y = [1; 2; 3]
+theta = [0;1]
 
-J = cost Function
+function J = costFunctionJ(X, y, theta)
+  % X is the "design matrix" containing our training example.
+  % y is the class labels 
+  
+  m = size(X,1); % number of training examples
+  predictions = X*theta; %predictions of hypothesis on all m examples
+  sqrErrors = (predictions-y).^2; % squared errors
+  
+  J = 1/(2*m)*sum(sqrErrors);
+endfunction
